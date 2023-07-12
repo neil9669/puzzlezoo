@@ -1,39 +1,38 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Picture Puzzle Website</h1>
 
-Welcome,
+[View the live project here.](https://codeinstitute.net)
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This site provides an example of an interactive user experience.  This is in the form of a simple jigsaw type puzzle that the user must successfully complete.  It demostrates drag and drop interaction of the puzzle pieces and start and change buttons to select a new picture and scramble the pieces.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+<h2 align="center"><img src="https://ui.dev/amiresponsive"></h2>
 
-## Codeanywhere Reminders
+## User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+-   ### User stories
 
-`python3 -m http.server`
+    -   #### First Time Visitor Goals
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+        1. As a First Time Visitor, I want to interact with the site.
+        2. As a First Time Visitor, I want to be able to easily understand the rules of the game.
+        3. As a First Time Visitor, I want to be able to complete the challenge.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+    -   #### Returning Visitor Goals
 
-`http_server`
+        1. As a Returning Visitor, I want to .
+        2. As a Returning Visitor, I want to .
+        3. As a Returning Visitor, I want to .
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    -   #### Frequent User Goals
+        1. As a Frequent User, I want to check.
+        2. As a Frequent User, I want to check .
+        3. As a Frequent User, I want to .
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+*   ### Wireframes
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Initial plan: <img src="images/initialdesigns.jpg">
 
-To log into the Heroku toolbelt CLI:
+    -   Home Page Wireframe - [View](https://github.com/)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    -   Mobile Wireframe - [View](https://github.com/)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+    -   Contact Us Page Wireframe - [View](https://github.com/)
