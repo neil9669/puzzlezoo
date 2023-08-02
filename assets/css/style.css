@@ -1,0 +1,10 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+header {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    background-color: #dc2f02;
+}
