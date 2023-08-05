@@ -6,5 +6,17 @@ body {
 header {
     font-family: "Oswald", sans-serif;
     font-size: 30px;
+    color: #03071e;
     background-color: #dc2f02;
+}
+
+footer {
+    font-family: "Oswald", sans-serif;
+    font-size: 10px;
+    color: #03071e;
+    background-color: #dc2f02;
+}
+
+.nav-link {
+    color: #03071e;
 }
