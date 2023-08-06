@@ -1,22 +1,50 @@
+@font-face {
+    /* Header and footer font downloaded from https: //www.fontspace.com/wonderbar-font-f24540 */
+    font-family: wonderbar;
+    src: url(../fonts/wonderbar-font/Wonderbar-pALD.ttf);
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The background image with text added */
+    background-image: url("../images/puzzlezoo.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body {
-    font-family: "Roboto", sans-serif;
+    /* main text font */
+    font-family: "bubblegum sans", cursive;
     font-size: 15px;
 }
 
 header {
-    font-family: "Oswald", sans-serif;
+    /* main header and footer font*/
+    font-family: "wonderbar", sans-serif;
     font-size: 30px;
     color: #03071e;
-    background-color: #dc2f02;
+    background-color: #7aa711;
 }
 
 footer {
-    font-family: "Oswald", sans-serif;
-    font-size: 10px;
+    /* main header and footer font*/
+    font-family: "wonderbar", sans-serif;
+    font-size: 20px;
     color: #03071e;
-    background-color: #dc2f02;
+    background-color: #7aa711;
 }
 
 .nav-link {
-    color: #03071e;
+    color: #fff;
 }
