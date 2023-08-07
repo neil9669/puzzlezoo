@@ -4,11 +4,14 @@
     src: url(../fonts/wonderbar-font/Wonderbar-pALD.ttf);
 }
 
+/*
 body,
+*/
 html {
     height: 100%;
     margin: 0;
 }
+
 
 .bg {
     /* The background image with text added */
@@ -45,11 +48,21 @@ footer {
     background-color: #7aa711;
 }
 
+.container {
+    padding-top: 15px;
+}
+
 .nav-link {
     color: #fff;
 }
 
 /* puzzle styles */
+
+.puzzle-piece {
+    padding: 0.5px;
+    width: 100%;
+    z-index: 500;
+}
 
 #board .row .col-md-3 {
     border: 1px solid #f9f9f9;
@@ -68,4 +81,8 @@ footer {
     margin: 0;
     padding: 0;
     visibility: hidden;
+}
+
+#puzzle-complete {
+    display: none;
 }
