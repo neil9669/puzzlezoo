@@ -48,3 +48,24 @@ footer {
 .nav-link {
     color: #fff;
 }
+
+/* puzzle styles */
+
+#board .row .col-md-3 {
+    border: 1px solid #f9f9f9;
+}
+
+.puzzle-space {
+    padding: 0;
+}
+
+.puzzle-drop-place {
+    border: 0.5px solid #f3f3f3;
+}
+
+.puzzle-space-holder {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
