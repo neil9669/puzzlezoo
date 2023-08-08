@@ -18,11 +18,6 @@ var pieces = [
     '<img src="../../assets/images/monkey/images/img16.png" alt="" data-piece="15" class="puzzle-piece" />'
 ];
 
-// Function to place piece in to Div
-function placePiece(item, index) {
-    document.getElementById("pieces-area").innerHTML += '<div class="col-3 puzzle-space">' + item + '</div>';
-}
-
 // Function to shuffle array (of pieces)
 function shuffle(a) {
     for (let i = a.length - 1; i > 0; i--) {
@@ -33,6 +28,19 @@ function shuffle(a) {
     }
     return a;
 }
+
+// Function to place piece in to Div
+function placePiece(item, index) {
+    document.getElementById("pieces-area").innerHTML += '<div class="col-3 puzzle-space">' + item + '</div>';
+}
+
+// Call this function when puzzle correctly completed
+function puzzleComplete() {
+    $("#pieces-area").hide();
+    $("#board").hide();
+    $("#puzzle-complete").show();
+}
+
 
 // Shuffle the pieces
 shuffle(pieces);
@@ -66,11 +74,17 @@ $(document).ready(() => {
             } else {
                 puzzleStatus[$(this).data("piece")] = false;
             }
+
+            // If all pieces correct then puzzle is complete
+            if (puzzleStatus.every(function (value) { return value; })) {
+                puzzleComplete();
+            }
         }
     });
 
     // test the finished puzzle
     //pieces.forEach(placePiece);
+    // $("#puzzle-complete").show();
 
 });
 
