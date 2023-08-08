@@ -64,6 +64,7 @@ footer {
     z-index: 500;
 }
 
+
 #board .row .col-md-3 {
     border: 1px solid #f9f9f9;
 }
@@ -84,5 +85,7 @@ footer {
 }
 
 #puzzle-complete {
+    height: 400px;
+    width: 400px;
     display: none;
 }
