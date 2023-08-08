@@ -37,6 +37,9 @@ function shuffle(a) {
 // Shuffle the pieces
 shuffle(pieces);
 
+// Place the pieces
+pieces.forEach(placePiece);
+
 // Puzzle status - trueif piece is in the correct place, otherwise false.
 var puzzleStatus = Array(pieces.length).fill(false);
 
@@ -53,8 +56,21 @@ $(document).ready(() => {
         }
     });
 
+    // Make board droppable
+    $(".puzzle-drop-place").droppable({
+        // When piece is in a grid square
+        drop: function (event, ui) {
+            // Check this square is ok to drop in
+            if ($(this).data("piece") == ui.draggable.data("piece")) {
+                puzzleStatus[$(this).data("piece")] = true;
+            } else {
+                puzzleStatus[$(this).data("piece")] = false;
+            }
+        }
+    });
+
     // test the finished puzzle
-    pieces.forEach(placePiece);
+    //pieces.forEach(placePiece);
 
 });
 
