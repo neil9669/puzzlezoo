@@ -37,13 +37,25 @@ function shuffle(a) {
 // Shuffle the pieces
 shuffle(pieces);
 
-
+// Puzzle status - trueif piece is in the correct place, otherwise false.
+var puzzleStatus = Array(pieces.length).fill(false);
 
 // Wait for website to load then run main jQuery functions
-$(document).ready(function () {
+$(document).ready(() => {
+    // Make pieces draggable
+    $(".puzzle-piece").draggable({
+        //snap to grid
+        snap: ".puzzle-space-holder",
+        snapMode: "inner",
+        // When a piece starts to move , mark it as in the wrong place
+        start: function (event, ui) {
+            puzzleStatus[$(this).data("piece")] = false;
+        }
+    });
+
     // test the finished puzzle
     pieces.forEach(placePiece);
 
-})
+});
 
 
