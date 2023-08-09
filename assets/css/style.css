@@ -23,13 +23,21 @@ html {
     /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
     background-size: cover;
+
+    /* Add the blur effect 
+    background: ;
+    filter: blur(8px);
+    -webkit-filter: blur(8px); */
+
 }
 
 body {
     /* main text font */
     font-family: "bubblegum sans", cursive;
-    font-size: 15px;
+    font-size: 20px;
+    /*  */
 }
 
 header {
@@ -64,6 +72,23 @@ footer {
     z-index: 500;
 }
 
+#instructions-area {
+    border-radius: 25px;
+    background: linear-gradient(#5a9902, #b2f711);
+    padding: 20px;
+    width: 400px;
+    height: 100%;
+
+    display: none;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: none;
+    flex-wrap: wrap;
+}
 
 #board .row .col-md-3 {
     border: 1px solid #f9f9f9;
@@ -84,8 +109,27 @@ footer {
     visibility: hidden;
 }
 
+#pieces-area {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+
 #puzzle-complete {
     height: 400px;
     width: 400px;
+    display: none;
+}
+
+#puzzle-complete-message {
+    border-radius: 25px;
+    background: linear-gradient(#5a9902, #b2f711);
+    padding: 20px;
+    width: 400px;
+    height: 100%;
+
     display: none;
 }
