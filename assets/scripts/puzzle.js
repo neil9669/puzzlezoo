@@ -39,6 +39,10 @@ function puzzleComplete() {
     $("#pieces-area").hide();
     $("#board").hide();
     $("#puzzle-complete").show();
+    $('.bg').css('background-size', 'cover');
+    $('#instructions-area').hide();
+    $('#pieces-area').css('display', 'none');
+    $('#puzzle-complete-message').show();
 }
 
 
@@ -88,4 +92,16 @@ $(document).ready(() => {
 
 });
 
+$('#instructions').click(function () {
+    $('.bg').css('background-size', '0%');
+    $('#instructions-area').show();
+    $('#board').css('display', 'flex');
+    $('#pieces-area').css('display', 'none');
+});
 
+$('#start').click(function () {
+    $('.bg').css('background-size', '0%');
+    $('#instructions-area').hide();
+    $('#pieces-area').css('display', 'flex');
+    $('#board').css('display', 'flex');
+});
