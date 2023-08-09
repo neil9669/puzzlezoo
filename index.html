@@ -21,13 +21,13 @@
       <h1>Welcome to Puzzle Zoo</h1>
       <ul class="navbar-nav mr-auto text-color">
         <li class="nav-item mr-2">
-          <a class="nav-link" href="#">Instructions</a>
+          <a class="nav-link" id="instructions" href="#">Instructions</a>
         </li>
         <li class="nav-item mr-2">
-          <a class="nav-link" href="#">Start</a>
+          <a class="nav-link" id="start" href="#">Start</a>
         </li>
         <li class="nav-item mr-2">
-          <a class="nav-link" href="#">Choose puzzle</a>
+          <a class="nav-link" id="puzzle-choice" href="#">Choose puzzle</a>
         </li>
       </ul>
     </nav>
@@ -37,78 +37,112 @@
   <!-- Main puzzle section -->
   <section class="container" id="zoo-puzzle">
     <div class="row">
+      <!-- Left Panel -->
       <div class="col-md-6">
-        <div class="row" id="pieces-area">
+        <div id="pieces-area">
+          <div class="col-3 puzzle-space"></div>
+          <div class="col-3 puzzle-space"></div>
+          <div class="col-3 puzzle-space"></div>
+          <div class="col-3 puzzle-space"></div>
         </div>
-        <div class="row" id="puzzle-complete">
-
+        <div id="puzzle-complete-message">
+          <div>
+            <h1>Well Done!</h1>
+            <p>
+              Percy is so happy.
+              <br>
+              You've found Molly the Monkey.
+              <br>
+              Percy has reunited her with her family.
+              <br>
+              <br>
+            </p>
+          </div>
+        </div>
+        <div id="instructions-area">
+          <div>
+            <h1>How to Play</h1>
+            <p>
+              Percy is a friendly zoo keeper.
+              <br>
+              Percy takes good care of all the animals at the zoo.
+              <br>
+              Percy gives them food, water and toys to play with.
+              <br>
+              Some of the animals like to play tricks on Percy and hide from him.
+              <br>
+              Can you find the Tiger, Monkey, and Zebra to solve the puzzle zoo?
+              <br>
+              Simply complete the puzzle to identify the animal and return them safely to their family.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <!-- End - Left Panel -->
+      <!-- Right Panel -->
+      <div class="col-md-6 ">
         <div id="board">
-          <div class="row">
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="0">
-              <img src="assets/images/monkey/images/img1.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="1">
-              <img src="assets/images/monkey/images/img2.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="2">
-              <img src="assets/images/monkey/images/img3.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="3">
-              <img src="assets/images/monkey/images/img4.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="4">
-              <img src="assets/images/monkey/images/img5.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="5">
-              <img src="assets/images/monkey/images/img6.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="6">
-              <img src="assets/images/monkey/images/img7.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="7">
-              <img src="assets/images/monkey/images/img8.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="8">
-              <img src="assets/images/monkey/images/img9.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="9">
-              <img src="assets/images/monkey/images/img10.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="10">
-              <img src="assets/images/monkey/images/img11.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="11">
-              <img src="assets/images/monkey/images/img12.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="12">
-              <img src="assets/images/monkey/images/img13.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="13">
-              <img src="assets/images/monkey/images/img14.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="14">
-              <img src="assets/images/monkey/images/img15.png" alt="" class="puzzle-space-holder">
-            </div>
-            <div class="col-3 puzzle-space puzzle-drop-place" data-piece="15">
-              <img src="assets/images/monkey/images/img16.png" alt="" class="puzzle-space-holder">
-            </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="0">
+            <img src="assets/images/monkey/images/img1.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="1">
+            <img src="assets/images/monkey/images/img2.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="2">
+            <img src="assets/images/monkey/images/img3.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="3">
+            <img src="assets/images/monkey/images/img4.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="4">
+            <img src="assets/images/monkey/images/img5.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="5">
+            <img src="assets/images/monkey/images/img6.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="6">
+            <img src="assets/images/monkey/images/img7.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="7">
+            <img src="assets/images/monkey/images/img8.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="8">
+            <img src="assets/images/monkey/images/img9.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="9">
+            <img src="assets/images/monkey/images/img10.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="10">
+            <img src="assets/images/monkey/images/img11.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="11">
+            <img src="assets/images/monkey/images/img12.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="12">
+            <img src="assets/images/monkey/images/img13.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="13">
+            <img src="assets/images/monkey/images/img14.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="14">
+            <img src="assets/images/monkey/images/img15.png" alt="" class="puzzle-space-holder">
+          </div>
+          <div class="col-3 puzzle-space puzzle-drop-place" data-piece="15">
+            <img src="assets/images/monkey/images/img16.png" alt="" class="puzzle-space-holder">
           </div>
         </div>
-        <div class="row">
-          <div id="puzzle-complete">
-            <img src="assets/images/monkey/images/monkey.png" alt="" class="w-100">
-          </div>
+
+        <div id="puzzle-complete">
+          <img src="assets/images/monkey/images/monkey.jpg" alt="" class="w-100">
         </div>
       </div>
+      <!-- End - Right Panel -->
     </div>
   </section>
   <!-- Main puzzle section -->
 
   <!-- Footer -->
-  <footer class="text-center mt-3">
+  <footer class="fixed-bottom text-center mt-3">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-md-between p-4 border-bottom">
       <!-- Left -->
