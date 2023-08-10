@@ -86,7 +86,7 @@ footer {
     width: 400px;
     height: 400px;
     margin: 0 auto;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -131,5 +131,11 @@ footer {
     width: 400px;
     height: 100%;
 
+    display: none;
+}
+
+#family-pic {
+    height: 400px;
+    width: 400px;
     display: none;
 }
