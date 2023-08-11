@@ -122,6 +122,15 @@ footer {
     display: none;
 }
 
+#Puzzle-choices {
+    border-radius: 25px;
+    background: linear-gradient(#5a9902, #b2f711);
+    padding: 20px;
+    width: 400px;
+    height: 100%;
+    display: none;
+}
+
 #puzzle-complete {
     height: 400px;
     width: 400px;
