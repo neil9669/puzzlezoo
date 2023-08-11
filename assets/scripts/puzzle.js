@@ -80,6 +80,7 @@ $(document).ready(() => {
 
 });
 
+// click event function to display instructions
 $('#instructions').click(function () {
     $('.bg').css('background-size', '0%');
     $('#instructions-area').show();
@@ -87,6 +88,7 @@ $('#instructions').click(function () {
     $('#pieces-area').css('display', 'none');
 });
 
+// click event function to start the puzzle
 $('#start').click(function () {
     $('.bg').css('background-size', '0%');
     $('#instructions-area').hide();
@@ -94,13 +96,24 @@ $('#start').click(function () {
     $('#board').css('display', 'flex');
 });
 
+// click event function for puzzle choice
 $('#puzzle-choice').click(function () {
-    $("#pieces-area").hide();
-    $("#board").slideUp();
-    $("#puzzle-complete").show().delay(1500).fadeOut();
-    $('#instructions-area').hide();
-    $('#puzzle-complete-message').show();
-    $("#family-pic").delay(1800).fadeIn(2000);
+    $("#Puzzle-choices").show();
+    // $("#pieces-area").hide();
+    // $("#board").slideUp();
+    //$("#puzzle-complete").show().delay(1500).fadeOut();
+    // $("#puzzle-complete").show();
+    // $('#instructions-area').hide();
+    // $('#puzzle-complete-message').show();
+    // $("#puzzle-complete").fadeOut("slow", function () {
+    //   $("#puzzle-complete").load(function () { //avoiding blinking, wait until loaded
+    //       $("#family-pic").fadeIn();
+    //   });
+
+    //  });
+    // $("#family-pic").delay(1800).fadeIn(2000);
+
+
 });
 
 // Call this function when puzzle correctly completed
