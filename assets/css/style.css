@@ -86,7 +86,7 @@ footer {
     width: 400px;
     height: 400px;
     margin: 0 auto;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
 }
 
@@ -135,6 +135,11 @@ footer {
 }
 
 #family-pic {
+    border-radius: 25px;
+    background: url(../images/tiger/images/img18.png);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
     height: 400px;
     width: 400px;
     display: none;
