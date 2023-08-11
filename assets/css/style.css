@@ -133,3 +133,14 @@ footer {
 
     display: none;
 }
+
+#family-pic {
+    border-radius: 25px;
+    background: url(../images/tiger/images/img18.png);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    display: none;
+}
