@@ -116,6 +116,32 @@ $('#puzzle-choice').click(function () {
 
 });
 
+// click event function for elephant puzzle choice
+$('#elephant').click(function () {
+    alert('This is the elepahant function');
+});
+
+// click event function for monkey puzzle choice
+$('#monkey').click(function () {
+    alert('This is the monkey function');
+});
+
+// click event function for panda puzzle choice
+$('#panda').click(function () {
+    alert('This is the panda function');
+});
+
+// click event function for tiger puzzle choice
+$('#tiger').click(function () {
+    alert('This is the tiger function');
+});
+
+// click event function for turtle puzzle choice
+$('#turtle').click(function () {
+    alert('This is the turtle function');
+});
+
+
 // Call this function when puzzle correctly completed
 function puzzleComplete() {
     $("#pieces-area").hide();
