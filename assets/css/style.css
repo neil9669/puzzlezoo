@@ -23,7 +23,7 @@ html {
     /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: rgb(1, 70, 15);
     background-size: cover;
 
     /* Add the blur effect 
@@ -62,6 +62,10 @@ footer {
 
 .nav-link {
     color: #fff;
+}
+
+.nav-link:hover {
+    color: rgb(1, 70, 15);
 }
 
 /* puzzle styles */
@@ -115,6 +119,15 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    display: none;
+}
+
+#Puzzle-choices {
+    border-radius: 25px;
+    background: linear-gradient(#5a9902, #b2f711);
+    padding: 20px;
+    width: 400px;
+    height: 100%;
     display: none;
 }
 
