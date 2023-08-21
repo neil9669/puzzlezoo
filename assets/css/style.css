@@ -76,6 +76,12 @@ footer {
     z-index: 500;
 }
 
+.puzzle-piece.ui-draggable-dragging {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+    transition: box-shadow .2s;
+    z-index: 1000;
+}
+
 #instructions-area {
     border-radius: 25px;
     background: linear-gradient(#5a9902, #b2f711);
