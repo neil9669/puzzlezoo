@@ -215,6 +215,19 @@ function currPuzzle(puzzle) {
     pieces.forEach(placePiece);
 } // currPuzzle end
 
+//Reload page after 5 second delay
+//function timeoutpage() {
+//    window.setTimeout('reloadSite()', 5000);
+//}
+
+//function reloadSite() {
+//    location.reload();
+//}
+
+
+//setTimeout(function () {
+//    location.reload(true);
+//}, 5000);
 
 // Call this function when puzzle correctly completed
 function puzzleComplete() {
@@ -224,4 +237,9 @@ function puzzleComplete() {
     $('#instructions-area').hide();
     $('#puzzle-complete-message').show();
     $("#family-pic").delay(1600).fadeIn(2000);
+    //Reload page after 3.5 second delay
+    setTimeout(() => {
+        location.reload();
+    }, 3500);
+
 }
