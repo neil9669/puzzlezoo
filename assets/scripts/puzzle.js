@@ -18,8 +18,6 @@ var pieces = [
     '<img src="../../assets/images/tiger/img16.png" alt="" data-piece="15" class="puzzle-piece" />'
 ];
 
-
-
 // Function to shuffle array (of pieces)
 function shuffle(a) {
     for (let i = a.length - 1; i > 0; i--) {
@@ -34,8 +32,6 @@ function shuffle(a) {
 // Function to place piece in to Div
 function placePiece(item, index) {
     document.getElementById("pieces-area").innerHTML += '<div class="col-3 puzzle-space">' + item + '</div>';
-    //console.log(test);
-    //  console.log(item, index);
 }
 
 // Shuffle the pieces
@@ -43,15 +39,11 @@ shuffle(pieces);
 
 // Place the pieces
 pieces.forEach(placePiece);
-// Puzzle status - trueif piece is in the correct place, otherwise false.
+// Puzzle status - true if piece is in the correct place, otherwise false.
 var puzzleStatus = Array(pieces.length).fill(false);
-
-//function puzzleLoad();
 
 // Wait for website to load then run main jQuery functions
 // When document is ready...
-
-//$(document).ready(function() {
 function puzzleReady(jQuery) {
     // Make pieces draggable
     $(".puzzle-piece").draggable({
@@ -93,7 +85,6 @@ $('#instructions').click(function () {
     $("#puzzle-complete").hide();
     $('#puzzle-complete-message').hide();
     $("#family-pic").hide();
-
     $('.bg').css('background-size', '0%');
     $('#instructions-area').show();
     $('#board').css('display', 'flex');
@@ -105,7 +96,6 @@ $('#start').click(function () {
     $("#puzzle-complete").hide();
     $('#puzzle-complete-message').hide();
     $("#family-pic").hide();
-
     $('.bg').css('background-size', '0%');
     $('#instructions-area').hide();
     $('#pieces-area').css('display', 'flex');
@@ -117,7 +107,6 @@ $('#puzzle-choice').click(function () {
     $("#puzzle-complete").hide();
     $('#puzzle-complete-message').hide();
     $("#family-pic").hide();
-
     $('#instructions-area').hide();
     $("#Puzzle-choices").show();
 });
@@ -162,12 +151,6 @@ $('#turtle').click(function () {
     $('#start').click();
 });
 
-// click event function for debug choice
-//$('#debug').click(function () {
-//    console.log($("#board div"));
-//    console.log($("#pieces-area div"));
-//});
-
 // change puzzle based on choice
 function currPuzzle(puzzle) {
     // Get name of old puzzle;
@@ -191,22 +174,13 @@ function currPuzzle(puzzle) {
         puzzleDiv[i].innerHTML = newsrc;
     }
 
-    // change css background pictuture
-    //let imageUrl = `../images/${puzzle}/img18.png`;
-    // console.log(imageUrl);
+    // change path for family image
     newsrc = `assets/images/${puzzle}/img18.png`;
     $("#family-pic").attr("src", newsrc);
-    // $("#family-pic").css("background-image", "url(" + imageUrl + ")");
-    // console.log($("#family-pic").css("background-image", "url(" + imageUrl + ")"));
 
-    // change puzzle complete picture
+    // change path for puzzle complete picture
     newsrc = `assets/images/${puzzle}/img17.png`;
     $("#complete-pic").attr("src", newsrc);
-    // console.log("Newsrc " + newsrc);
-    //  console.log(newsrc.innerHTML);
-    //  newsrc.innerHTML = `<img src="assets/images/${puzzle}/img17.png" alt="" class="w-100">`;
-    // console.log(newsrc);
-
 
     $(puzzleReady);
     // Shuffle the pieces
@@ -214,7 +188,6 @@ function currPuzzle(puzzle) {
     // Place the pieces
     pieces.forEach(placePiece);
 } // currPuzzle end
-
 
 // Call this function when puzzle correctly completed
 function puzzleComplete() {
@@ -224,4 +197,9 @@ function puzzleComplete() {
     $('#instructions-area').hide();
     $('#puzzle-complete-message').show();
     $("#family-pic").delay(1600).fadeIn(2000);
+    //Reload page after 3.5 second delay
+    setTimeout(() => {
+        location.reload();
+    }, 3500);
+
 }

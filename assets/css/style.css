@@ -4,9 +4,6 @@
     src: url(../fonts/wonderbar-font/Wonderbar-pALD.ttf);
 }
 
-/*
-body,
-*/
 html {
     height: 100%;
     margin: 0;
@@ -25,19 +22,12 @@ html {
     background-repeat: no-repeat;
     background-color: rgb(1, 70, 15);
     background-size: cover;
-
-    /* Add the blur effect 
-    background: ;
-    filter: blur(8px);
-    -webkit-filter: blur(8px); */
-
 }
 
 body {
     /* main text font */
     font-family: "bubblegum sans", cursive;
     font-size: 20px;
-    /*  */
 }
 
 header {
@@ -88,7 +78,6 @@ footer {
     padding: 20px;
     width: 400px;
     height: 100%;
-
     display: none;
 }
 
@@ -157,7 +146,6 @@ footer {
 #Puzzle-choices img {
     border-radius: 50%;
     padding: 3px;
-
 }
 
 #puzzle-complete {
