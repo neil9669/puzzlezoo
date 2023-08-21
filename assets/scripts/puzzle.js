@@ -33,9 +33,6 @@ function shuffle(a) {
 
 // Function to place piece in to Div
 function placePiece(item, index) {
-    //    let test = document.getElementById("pieces-area").innerHTML += '<div class="col-3 puzzle-space">' + item + '</div>';
-
-
     document.getElementById("pieces-area").innerHTML += '<div class="col-3 puzzle-space">' + item + '</div>';
     //console.log(test);
     //  console.log(item, index);
@@ -93,6 +90,10 @@ $(document).ready(puzzleReady);
 
 // click event function to display instructions
 $('#instructions').click(function () {
+    $("#puzzle-complete").hide();
+    $('#puzzle-complete-message').hide();
+    $("#family-pic").hide();
+
     $('.bg').css('background-size', '0%');
     $('#instructions-area').show();
     $('#board').css('display', 'flex');
@@ -101,14 +102,23 @@ $('#instructions').click(function () {
 
 // click event function to start the puzzle
 $('#start').click(function () {
+    $("#puzzle-complete").hide();
+    $('#puzzle-complete-message').hide();
+    $("#family-pic").hide();
+
     $('.bg').css('background-size', '0%');
     $('#instructions-area').hide();
     $('#pieces-area').css('display', 'flex');
     $('#board').css('display', 'flex');
-}); //Start end
+}); //Start end//
 
 // click event function for puzzle choice
 $('#puzzle-choice').click(function () {
+    $("#puzzle-complete").hide();
+    $('#puzzle-complete-message').hide();
+    $("#family-pic").hide();
+
+    $('#instructions-area').hide();
     $("#Puzzle-choices").show();
 });
 
@@ -117,6 +127,7 @@ $('#elephant').click(function () {
     $("#Puzzle-choices").hide();
     $("#pieces-area div").remove();
     currPuzzle("elephant");
+    $('#start').click();
 });
 
 // click event function for monkey puzzle choice
@@ -124,7 +135,7 @@ $('#monkey').click(function () {
     $("#Puzzle-choices").hide();
     $("#pieces-area div").remove();
     currPuzzle("monkey");
-    $(onPageLoad);
+    $('#start').click();
 });
 
 // click event function for panda puzzle choice
@@ -132,7 +143,7 @@ $('#panda').click(function () {
     $("#Puzzle-choices").hide();
     $("#pieces-area div").remove();
     currPuzzle("panda");
-    $(onPageLoad);
+    $('#start').click();
 });
 
 // click event function for tiger puzzle choice
@@ -140,7 +151,7 @@ $('#tiger').click(function () {
     $("#Puzzle-choices").hide();
     $("#pieces-area div").remove();
     currPuzzle("tiger");
-    $(onPageLoad);
+    $('#start').click();
 });
 
 // click event function for turtle puzzle choice
@@ -148,14 +159,14 @@ $('#turtle').click(function () {
     $("#Puzzle-choices").hide();
     $("#pieces-area div").remove();
     currPuzzle("turtle");
-    $(onPageLoad);
+    $('#start').click();
 });
 
 // click event function for debug choice
-$('#debug').click(function () {
-    console.log($("#board div"));
-    console.log($("#pieces-area div"));
-});
+//$('#debug').click(function () {
+//    console.log($("#board div"));
+//    console.log($("#pieces-area div"));
+//});
 
 // change puzzle based on choice
 function currPuzzle(puzzle) {
@@ -179,6 +190,24 @@ function currPuzzle(puzzle) {
         newsrc = puzzleDiv[i].innerHTML.replace(oldPuzzle, puzzle);
         puzzleDiv[i].innerHTML = newsrc;
     }
+
+    // change css background pictuture
+    //let imageUrl = `../images/${puzzle}/img18.png`;
+    // console.log(imageUrl);
+    newsrc = `assets/images/${puzzle}/img18.png`;
+    $("#family-pic").attr("src", newsrc);
+    // $("#family-pic").css("background-image", "url(" + imageUrl + ")");
+    // console.log($("#family-pic").css("background-image", "url(" + imageUrl + ")"));
+
+    // change puzzle complete picture
+    newsrc = `assets/images/${puzzle}/img17.png`;
+    $("#complete-pic").attr("src", newsrc);
+    // console.log("Newsrc " + newsrc);
+    //  console.log(newsrc.innerHTML);
+    //  newsrc.innerHTML = `<img src="assets/images/${puzzle}/img17.png" alt="" class="w-100">`;
+    // console.log(newsrc);
+
+
     $(puzzleReady);
     // Shuffle the pieces
     $(shuffle(pieces));
@@ -194,5 +223,5 @@ function puzzleComplete() {
     $("#puzzle-complete").show().delay(1500).fadeOut();
     $('#instructions-area').hide();
     $('#puzzle-complete-message').show();
-    $("#family-pic").delay(1800).fadeIn(2000);
+    $("#family-pic").delay(1600).fadeIn(2000);
 }
