@@ -131,6 +131,29 @@ footer {
     display: none;
 }
 
+#Puzzle-choices a {
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #03071e;
+}
+
+#Puzzle-choices a:hover {
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: rgb(1, 70, 15);
+}
+
+#Puzzle-choices li {
+    list-style-type: none;
+}
+
+#Puzzle-choices img {
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
 #puzzle-complete {
     height: 400px;
     width: 400px;
@@ -143,15 +166,11 @@ footer {
     padding: 20px;
     width: 400px;
     height: 100%;
-
     display: none;
 }
 
 #family-pic {
     border-radius: 25px;
-    background: url(../images/tiger/images/img18.png);
-    background-position: left top;
-    background-repeat: repeat;
     padding: 20px;
     height: 400px;
     width: 400px;
