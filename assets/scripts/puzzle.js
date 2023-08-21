@@ -90,6 +90,10 @@ $(document).ready(puzzleReady);
 
 // click event function to display instructions
 $('#instructions').click(function () {
+    $("#puzzle-complete").hide();
+    $('#puzzle-complete-message').hide();
+    $("#family-pic").hide();
+
     $('.bg').css('background-size', '0%');
     $('#instructions-area').show();
     $('#board').css('display', 'flex');
@@ -98,14 +102,22 @@ $('#instructions').click(function () {
 
 // click event function to start the puzzle
 $('#start').click(function () {
+    $("#puzzle-complete").hide();
+    $('#puzzle-complete-message').hide();
+    $("#family-pic").hide();
+
     $('.bg').css('background-size', '0%');
     $('#instructions-area').hide();
     $('#pieces-area').css('display', 'flex');
     $('#board').css('display', 'flex');
-}); //Start end
+}); //Start end//
 
 // click event function for puzzle choice
 $('#puzzle-choice').click(function () {
+    $("#puzzle-complete").hide();
+    $('#puzzle-complete-message').hide();
+    $("#family-pic").hide();
+
     $('#instructions-area').hide();
     $("#Puzzle-choices").show();
 });
@@ -151,10 +163,10 @@ $('#turtle').click(function () {
 });
 
 // click event function for debug choice
-$('#debug').click(function () {
-    console.log($("#board div"));
-    console.log($("#pieces-area div"));
-});
+//$('#debug').click(function () {
+//    console.log($("#board div"));
+//    console.log($("#pieces-area div"));
+//});
 
 // change puzzle based on choice
 function currPuzzle(puzzle) {
