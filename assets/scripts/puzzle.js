@@ -1,21 +1,21 @@
 // images for current puzzle
 var pieces = [
-    '<img src="../../assets/images/tiger/img1.png" alt="" data-piece="0" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img2.png" alt="" data-piece="1" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img3.png" alt="" data-piece="2" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img4.png" alt="" data-piece="3" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img5.png" alt="" data-piece="4" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img6.png" alt="" data-piece="5" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img7.png" alt="" data-piece="6" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img8.png" alt="" data-piece="7" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img9.png" alt="" data-piece="8" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img10.png" alt="" data-piece="9" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img11.png" alt="" data-piece="10" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img12.png" alt="" data-piece="11" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img13.png" alt="" data-piece="12" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img14.png" alt="" data-piece="13" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img15.png" alt="" data-piece="14" class="puzzle-piece" />',
-    '<img src="../../assets/images/tiger/img16.png" alt="" data-piece="15" class="puzzle-piece" />'
+    '<img src="../../assets/images/tiger/img1.webp" alt="" data-piece="0" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img2.webp" alt="" data-piece="1" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img3.webp" alt="" data-piece="2" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img4.webp" alt="" data-piece="3" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img5.webp" alt="" data-piece="4" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img6.webp" alt="" data-piece="5" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img7.webp" alt="" data-piece="6" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img8.webp" alt="" data-piece="7" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img9.webp" alt="" data-piece="8" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img10.webp" alt="" data-piece="9" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img11.webp" alt="" data-piece="10" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img12.webp" alt="" data-piece="11" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img13.webp" alt="" data-piece="12" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img14.webp" alt="" data-piece="13" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img15.webp" alt="" data-piece="14" class="puzzle-piece" />',
+    '<img src="../../assets/images/tiger/img16.webp" alt="" data-piece="15" class="puzzle-piece" />'
 ];
 
 // Function to shuffle array (of pieces)
@@ -164,7 +164,7 @@ function currPuzzle(puzzle) {
 
     // change puzzle pieces location in pieces variable
     for (let i = 0; i < pieces.length; ++i) {
-        puzzleVar = `<img src="../../assets/images/${puzzle}/img${i + 1}.png" alt="" data-piece="${i}" class="puzzle-piece" />`;
+        puzzleVar = `<img src="../../assets/images/${puzzle}/img${i + 1}.webp" alt="" data-piece="${i}" class="puzzle-piece" />`;
         pieces[i] = puzzleVar;
     }
 
@@ -175,11 +175,11 @@ function currPuzzle(puzzle) {
     }
 
     // change path for family image
-    newsrc = `assets/images/${puzzle}/img18.png`;
+    newsrc = `assets/images/${puzzle}/img18.webp`;
     $("#family-pic").attr("src", newsrc);
 
     // change path for puzzle complete picture
-    newsrc = `assets/images/${puzzle}/img17.png`;
+    newsrc = `assets/images/${puzzle}/img17.webp`;
     $("#complete-pic").attr("src", newsrc);
 
     $(puzzleReady);
