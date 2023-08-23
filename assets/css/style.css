@@ -20,7 +20,7 @@ html {
     /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgb(1, 70, 15);
+    background-color: #285238;
     background-size: cover;
 }
 
@@ -35,15 +35,15 @@ header {
     font-family: "wonderbar", sans-serif;
     font-size: 30px;
     color: #03071e;
-    background-color: #7aa711;
+    background-color: #138A36;
 }
 
 footer {
     /* main header and footer font*/
     font-family: "wonderbar", sans-serif;
     font-size: 20px;
-    color: #03071e;
-    background-color: #7aa711;
+    color: #34403A;
+    background-color: #138A36;
 }
 
 .container {
@@ -55,7 +55,7 @@ footer {
 }
 
 .nav-link:hover {
-    color: rgb(1, 70, 15);
+    color: #285238;
 }
 
 /* puzzle styles */
@@ -74,7 +74,7 @@ footer {
 
 #instructions-area {
     border-radius: 25px;
-    background: linear-gradient(#5a9902, #b2f711);
+    background: linear-gradient(#138A36, #04E824);
     padding: 20px;
     width: 400px;
     height: 100%;
@@ -136,7 +136,7 @@ footer {
     font-size: 25px;
     letter-spacing: 3px;
     text-decoration: none;
-    color: rgb(1, 70, 15);
+    color: #285238;
 }
 
 #Puzzle-choices li {
@@ -156,7 +156,7 @@ footer {
 
 #puzzle-complete-message {
     border-radius: 25px;
-    background: linear-gradient(#5a9902, #b2f711);
+    background: linear-gradient(#138A36, #04E824);
     padding: 20px;
     width: 400px;
     height: 100%;
