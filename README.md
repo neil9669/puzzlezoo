@@ -2,7 +2,9 @@
 
 [View the live project here.](https://puzzlezoo.plamersaurus.co.uk)
 
-This site provides an example of an interactive user experience.  This is in the form of a simple jigsaw type puzzle that the user must successfully complete.  It demostrates drag and drop interaction of the puzzle pieces and start and change buttons to select a new picture and scramble the pieces.
+This site provides an example of an interactive user experience.  This is in the form of a simple jigsaw type puzzle that the user must successfully complete.  It demostrates drag and drop interaction of the puzzle pieces and start and change actions to select a new picture and scramble the pieces.
+
+I decided to aim it more at children and base the puzzles on a zoo theme with colourful cartoon animals to solve.
 
 <h2 align="center"><img src="docs/responsive.PNG"></h2>
 
@@ -12,20 +14,17 @@ This site provides an example of an interactive user experience.  This is in the
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to interact with the site.
+        1. As a First Time Visitor, I want to easily interact with the site.
         2. As a First Time Visitor, I want to be able to easily understand the rules of the game.
         3. As a First Time Visitor, I want to be able to complete the challenge.
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to .
-        2. As a Returning Visitor, I want to .
-        3. As a Returning Visitor, I want to .
+        1. As a Returning Visitor, I want to solve different challenges.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to check.
-        2. As a Frequent User, I want to check .
-        3. As a Frequent User, I want to .
+        1. As a Frequent User, I want to explore social media links.
+        2. As a Frequent User, I want to solve different challenges.
 
 *   ### Wireframes
 
@@ -99,10 +98,16 @@ I used Lighthouse within the Chrome Developer Tools to allow me to test the perf
 
 Initial lighthouse testing :
 
-[desktop](docs/testing/lighthouse/lighthouse-main.png) 
+![desktop](docs/testing/lighthouse/lighthouse-main.png) 
 
-[mobile](docs/testing/lighthouse/lighthouse-mob.png)
+![mobile](docs/testing/lighthouse/lighthouse-mob.png)
 
 Suggestions:
 
-1. serve images in next-gen formats. Lighthouse suggests using image formats such as WebP & AVIF to improve compression and lead to faster downloads and less data consumption. 
+1. serve images in next-gen formats. Lighthouse suggests using image formats such as WebP & AVIF to improve compression and lead to faster downloads and less data consumption.  I have now converted the logo and slide images to webp format using Birme.
+
+Final lighthouse testing:
+
+![Final Lighthouse Testing for Desktop](docs/testing/lighthouse/lighthouse-main-final.png)
+![Final Lighthouse Testing for Mobile](docs/testing/lighthouse/lighthouse-mob-final.png)
+
