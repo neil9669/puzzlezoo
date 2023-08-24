@@ -114,6 +114,8 @@ $('#puzzle-choice').click(function () {
 // click event function for elephant puzzle choice
 $('#elephant').click(function () {
     $("#Puzzle-choices").hide();
+    $("header").hide();
+    $("footer").hide();
     $("#pieces-area div").remove();
     currPuzzle("elephant");
     $('#start').click();
@@ -130,6 +132,8 @@ $('#monkey').click(function () {
 // click event function for panda puzzle choice
 $('#panda').click(function () {
     $("#Puzzle-choices").hide();
+    // $("header").hide();
+    $("footer").hide();
     $("#pieces-area div").remove();
     currPuzzle("panda");
     $('#start').click();
@@ -197,9 +201,9 @@ function puzzleComplete() {
     $('#instructions-area').hide();
     $('#puzzle-complete-message').show();
     $("#family-pic").delay(1600).fadeIn(2000);
-    //Reload page after 3.5 second delay
+    //Reload page after 5 second delay
     setTimeout(() => {
         location.reload();
-    }, 3500);
+    }, 5000);
 
 }
