@@ -54,9 +54,9 @@ All artwork was downloaded from the internet. I have credited these in the [cred
 
     -   Initial plan idea - [View](docs/initialdesigns.jpg)
 
-    -   Main display Wireframe - [View]()
+    -   Main display Wireframe - [View](docs/main-wireframe.jpg)
 
-    -   Mobile Wireframe - [View]()
+    -   Mobile Wireframe - [View](docs/mob-wireframe.jpg)
 
 
 ## Deployment & Local Development
@@ -101,10 +101,11 @@ Testing was ongoing throughout the project using dev tools and console.log() out
 
 ### W3C Validator
 
-The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
+The W3C validator was used to validate the HTML on the website. It was also used to validate CSS in the style.css file.
+It suggests removing trailing slashes but this is enforced be pretter VScode extension.  My CSS validates but there are comments regaring 3rd party libraries.  
 
-* [Index Page HTML](docs/testing/w3c/)
-* [style.css CSS](docs/testing/w3c/)
+* [Index Page HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpuzzlezoo.plamersaurus.co.uk%2F)
+* [style.css CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpuzzlezoo.plamersaurus.co.uk%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Solved Bugs
 
