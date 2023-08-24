@@ -26,6 +26,30 @@ I decided to aim it more at children and base the puzzles on a zoo theme with co
         1. As a Frequent User, I want to explore social media links.
         2. As a Frequent User, I want to solve different challenges.
 
+
+- - -
+
+## Design
+
+### Colour Scheme
+
+![Puzzle Zoo colour palette](docs/colourpalette.png)
+
+The website uses a palette of green based colours that compliment the images. The colour palette was created using the [Coolors](https://coolors.co/) website.
+
+### Typography
+
+Google Fonts was used for the main text and, headings use an imported font:
+
+* Wonderbar font is used for headings on the site. It is available from https://www.fontspace.com/wonderbar-font-f24540.
+
+* Bubblegum Sans is used for the main text on the site.  
+
+### Imagery
+
+All artwork was downloaded from the internet. I have credited these in the [credits](#Credits) section.
+
+
 *   ### Wireframes
 
     -   Initial plan idea - [View](docs/initialdesigns.jpg)
@@ -110,4 +134,28 @@ Final lighthouse testing:
 
 ![Final Lighthouse Testing for Desktop](docs/testing/lighthouse/lighthouse-main-final.png)
 ![Final Lighthouse Testing for Mobile](docs/testing/lighthouse/lighthouse-mob-final.png)
+
+- - -
+
+# Credits
+
+### Imagery
+
+* [Puzzle Zoo background image by brgfx](https://www.freepik.com/free-vector/border-template-with-cute-animals_6997467.htm)
+* [Elephant image by brgfx](https://www.freepik.com/free-vector/wild-animals-white-background_1170727.htm)
+* [Monkey, Panda, Tiger and Turtle by brgfx](https://www.freepik.com/free-vector/set-cute-animals_4606801.htm)
+* [Monkey Family by brgfx](https://www.freepik.com/free-vector/isolated-forest-scene-with-naughty-monkeys_21197276.htm)
+
+
+Elephant Family
+<a href="https://www.freepik.com/free-vector/elephant-family-with-other-wild-animals-forest-scene_16456729.htm#page=6&query=elephants%20cartoon&position=39&from_view=search&track=ais">Image by brgfx</a> on Freepik
+
+Panda Family 
+<a href="https://www.freepik.com/free-vector/scene-with-cute-pandas-park_5934934.htm#query=pandas%20by%20water%20cartoon&position=0&from_view=search&track=ais">Image by brgfx</a> on Freepik
+
+Turtle Family
+<a href="https://www.freepik.com/free-vector/scene-with-tortoise-park_5982439.htm#query=turtles%20family%20cartoon&position=1&from_view=search&track=ais">Image by brgfx</a> on Freepik
+
+Tiger Family
+<a href="https://www.vecteezy.com/free-vector/life">Life Vectors by Vecteezy</a>
 
