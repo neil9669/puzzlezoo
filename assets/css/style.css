@@ -34,7 +34,7 @@ header {
     /* main header and footer font*/
     font-family: "wonderbar", sans-serif;
     font-size: 30px;
-    color: #03071e;
+    color: #000;
     background-color: #138A36;
 }
 
@@ -42,7 +42,7 @@ footer {
     /* main header and footer font*/
     font-family: "wonderbar", sans-serif;
     font-size: 20px;
-    color: #34403A;
+    color: #000;
     background-color: #138A36;
 }
 
@@ -79,6 +79,7 @@ footer {
     width: 400px;
     height: 100%;
     display: none;
+    flex-wrap: wrap;
 }
 
 #board {

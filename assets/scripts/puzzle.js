@@ -94,6 +94,8 @@ $('#instructions').click(function () {
 // click event function to start the puzzle
 $('#start').click(function () {
     $("#puzzle-complete").hide();
+    $("header").hide();
+    $("footer").hide();
     $('#puzzle-complete-message').hide();
     $("#family-pic").hide();
     $('.bg').css('background-size', '0%');
@@ -114,8 +116,6 @@ $('#puzzle-choice').click(function () {
 // click event function for elephant puzzle choice
 $('#elephant').click(function () {
     $("#Puzzle-choices").hide();
-    $("header").hide();
-    $("footer").hide();
     $("#pieces-area div").remove();
     currPuzzle("elephant");
     $('#start').click();
@@ -132,8 +132,6 @@ $('#monkey').click(function () {
 // click event function for panda puzzle choice
 $('#panda').click(function () {
     $("#Puzzle-choices").hide();
-    // $("header").hide();
-    $("footer").hide();
     $("#pieces-area div").remove();
     currPuzzle("panda");
     $('#start').click();

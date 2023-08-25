@@ -6,7 +6,7 @@ This site provides an example of an interactive user experience.  This is in the
 
 I decided to aim it more at children and base the puzzles on a zoo theme with colourful cartoon animals to solve.
 
-<h2 align="center"><img src="docs/responsive.PNG"></h2>
+<h2 align="center"><img src="docs/responsive.png"></h2>
 
 ## User Experience (UX)
 
@@ -94,6 +94,31 @@ To clone the puzzlezoo repository:
 
 - - -
 
+## Technologies Used
+
+### Languages Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript EC6](https://en.wikipedia.org/wiki/ECMAScript_version_history#6th_Edition_%E2%80%93_ECMAScript_2015)
+- [jQuery](https://en.wikipedia.org/wiki/jQuery)
+
+### Frameworks, Libraries & Programs Used
+
+1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+   - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Google Fonts:](https://fonts.google.com/)
+   - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+1. [Font Awesome:](https://fontawesome.com/)
+   - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1. [jQuery:](https://jquery.com/)
+   - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+1. [Git](https://git-scm.com/)
+   - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+   - GitHub is used to store the projects code after being pushed from Git.
+
+
 ## Testing
 
 Testing was ongoing throughout the project using dev tools and console.log() output for jQuery/JS validation.
@@ -104,16 +129,10 @@ Testing was ongoing throughout the project using dev tools and console.log() out
 The W3C validator was used to validate the HTML on the website. It was also used to validate CSS in the style.css file.
 It suggests removing trailing slashes but this is enforced be pretter VScode extension.  My CSS validates but there are comments regaring 3rd party libraries.  
 
-* [Index Page HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpuzzlezoo.plamersaurus.co.uk%2F)
-* [style.css CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpuzzlezoo.plamersaurus.co.uk%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+* [Index Page HTML](docs/testing/w3c/w3c-html.png)
+* [style.css CSS](docs/testing/w3c/w3c-css.png)
 
-### Solved Bugs
 
-1. The navbar 
-
-### Known Bugs
-
-1. Users 
 
 ### Lighthouse
 
@@ -160,3 +179,19 @@ Turtle Family
 Tiger Family
 <a href="https://www.vecteezy.com/free-vector/life">Life Vectors by Vecteezy</a>
 
+### Code
+
+- [Based on tutorial coded here]().
+
+### Content
+
+- All content was written by the developer.
+
+- Based on code snippets as above
+
+
+### Acknowledgements
+
+- My Mentor for continuous helpful feedback.
+
+- Tutor support at Code Institute for their support.
